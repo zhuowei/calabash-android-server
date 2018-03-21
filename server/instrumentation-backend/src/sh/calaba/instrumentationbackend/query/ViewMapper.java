@@ -29,6 +29,7 @@ public class ViewMapper {
 		data.put("enabled", v.isEnabled());
 
 		data.put("id", getIdForView(v));
+		data.put("idRaw", v.getId());
 		data.put("tag", getTagForView(v));
 		data.put("visible", UIQueryUtils.isVisible(new UIObjectView(v)));
 
